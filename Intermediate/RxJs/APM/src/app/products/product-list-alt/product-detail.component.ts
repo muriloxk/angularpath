@@ -11,8 +11,7 @@ import { empty, EMPTY } from 'rxjs';
 export class ProductDetailComponent  {
   pageTitle = 'Product Detail';
   errorMessage = '';
-
-
+  
   product$ = this.productService.productSelected$
                   .pipe(
                           catchError(err => {
